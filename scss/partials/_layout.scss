@@ -1,0 +1,60 @@
+// Base Styles
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  color: #ccc;
+  weight: 300;
+}
+figure {
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Parallax
+.autumn-box {
+  position: relative;
+  height: 650px;
+  background-image: url('../images/autumn.jpg');
+  background-size: cover 650px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 3;
+  .logo {
+    height: 100px;
+    width: 100%;
+    background-image: url('../images/parallax.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+  }
+  .tree {
+  width: 960px;
+  height: 1095px;
+  // background-color: transparentize(pink, 0.3);
+  background-image: url('../images/tree.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px; //cause its with is 960, so it will bring it right to the center there
+  top: 420px;
+  }
+  .back-leaf {
+  width: 960px;
+  height: 221px;
+  background-image: url('../images/small-back-leaf.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+ }
+}
