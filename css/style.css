@@ -814,7 +814,14 @@ img {
   max-width: 100%;
 }
 
-.autumn-box {
+.content {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  margin-bottom: 400px;
+}
+
+.content .autumn-box {
   position: relative;
   height: 650px;
   background-image: url("../images/autumn.jpg");
@@ -825,7 +832,7 @@ img {
   z-index: 3;
 }
 
-.autumn-box .logo {
+.content .autumn-box .logo {
   height: 100px;
   width: 100%;
   background-image: url("../images/parallax.png");
@@ -836,7 +843,7 @@ img {
   margin-top: -50px;
 }
 
-.autumn-box .tree {
+.content .autumn-box .tree {
   width: 960px;
   height: 1095px;
   background-image: url("../images/tree.png");
@@ -848,7 +855,7 @@ img {
   top: 420px;
 }
 
-.autumn-box .back-leaf {
+.content .autumn-box .back-leaf {
   width: 960px;
   height: 221px;
   background-image: url("../images/small-back-leaf.png");
@@ -857,6 +864,30 @@ img {
   position: absolute;
   left: 50%;
   margin-left: -480px;
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer-div {
+  color: white;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+footer .footer-div li {
+  list-style: none;
+}
+
+footer .footer-div li a {
+  color: white;
+  text-decoration: none;
+  border: none;
 }
 
 * {
